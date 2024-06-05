@@ -50,3 +50,23 @@ export const Info = styled.div`
         padding: 0.5rem;
     }
 `
+
+export const CoffeeListContainer = styled.section`
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    padding:  5rem 10rem;
+    
+    .containerTitle {
+        ${mixins.fonts.titleL}
+        color: ${props => props.theme["base-subtitle"]};
+    }
+`
+
+export const CoffeeList = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 2.5rem 2rem;
+    align-items: center;
+`
