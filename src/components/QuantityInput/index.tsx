@@ -1,20 +1,13 @@
 import { Minus, Plus } from "phosphor-react";
 import { QuantityInputContainer } from "./styles";
-import { useState } from "react";
 
-export function QuantityInput() {
-    const [quantity, setQuantity] = useState(1)
+interface QuantityInputProps {
+    quantity: number,
+    incrementQuantity: () => void
+    decrementQuantity: () => void
+}
 
-    function incrementQuantity() {
-        setQuantity((state) => state + 1)
-    }
-
-    function decrementQuantity() {
-        if(quantity > 1) {
-            setQuantity((state) => state - 1)
-        }
-    }
-    
+export function QuantityInput({ quantity, incrementQuantity, decrementQuantity }:QuantityInputProps) {
     return (
         <QuantityInputContainer>
             <button>

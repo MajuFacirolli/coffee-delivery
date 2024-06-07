@@ -2,6 +2,7 @@ import { ShoppingCart } from "phosphor-react"
 import { CardsContainer, CoffeImg, Control, Tags } from "./styles"
 import { QuantityInput } from "../QuantityInput"
 import { useTheme } from "styled-components"
+import { useState } from "react"
 
 interface CardProps {
     coffee: {
@@ -16,6 +17,17 @@ interface CardProps {
 
 export function Card({ coffee }: CardProps) {
     const theme = useTheme()
+    const [quantity, setQuantity] = useState(1)
+
+    function incrementQuantity() {
+        setQuantity((state) => state + 1)
+    }
+
+    function decrementQuantity() {
+        if(quantity > 1) {
+            setQuantity((state) => state - 1)
+        }
+    }
 
     return (
         <CardsContainer>
@@ -29,7 +41,11 @@ export function Card({ coffee }: CardProps) {
             <p>{coffee.description}</p>
             <Control>
                 <p className="price">R$ <span>{coffee.price.toFixed(2)}</span></p>
-                <QuantityInput />
+                <QuantityInput 
+                    quantity={quantity}
+                    incrementQuantity={incrementQuantity} 
+                    decrementQuantity={decrementQuantity}
+                />
                 <ShoppingCart 
                     size={32} 
                     weight="fill"
