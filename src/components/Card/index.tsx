@@ -29,6 +29,11 @@ export function Card({ coffee }: CardProps) {
         }
     }
 
+    function handleAddItem() {
+        console.log(quantity);
+        
+    }
+
     return (
         <CardsContainer>
             <CoffeImg src={coffee.image} alt="" />
@@ -47,6 +52,7 @@ export function Card({ coffee }: CardProps) {
                     decrementQuantity={decrementQuantity}
                 />
                 <ShoppingCart 
+                    onClick={handleAddItem}
                     size={32} 
                     weight="fill"
                     color={theme["base-card"]}
