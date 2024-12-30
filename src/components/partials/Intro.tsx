@@ -18,6 +18,7 @@ export const Intro = () => {
                 <div className='grid sm:grid-cols-2 sm:gap-x-10 gap-y-5'>
                     {introCategoryList.map((item) => (
                         <CategoryItem 
+                            key={item.description}
                             icon={item.icon} 
                             description={item.description} 
                             accentColor={item.accentColor}
