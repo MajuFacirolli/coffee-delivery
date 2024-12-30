@@ -49,6 +49,9 @@ export default {
       lineHeight: {
         130: '130%',
         160: '160%'
+      },
+      backgroundImage: {
+        'intro-pattern': "url('/intro-bg.svg')"
       }
     },
     plugins: [],

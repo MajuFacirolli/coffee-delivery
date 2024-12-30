@@ -1,5 +1,11 @@
+import { Intro } from "../components/partials/Intro"
+
 export const Home = () => {
     return (
-        <h1>Home</h1>
+        <main>
+            <div className="w-full bg-intro-pattern bg-cover">
+                <Intro />
+            </div>
+        </main>
     )
 }
