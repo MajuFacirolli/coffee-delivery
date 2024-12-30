@@ -4,7 +4,7 @@ import { MapPin, ShoppingCart } from "phosphor-react"
 
 export const Header = () => {
     return (
-        <header className="flex items-center justify-between pt-8">
+        <header className="container flex items-center justify-between py-8">
             <Link to='/' title="Home">
                 <img src={logo} alt="" />
             </Link>
