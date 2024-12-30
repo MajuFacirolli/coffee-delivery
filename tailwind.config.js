@@ -11,6 +11,9 @@ export default {
         padding: {
           DEFAULT: '1.5rem'
         },
+        screens: {
+          xl: '90rem'
+        }
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
