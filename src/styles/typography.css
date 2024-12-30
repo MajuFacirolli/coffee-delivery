@@ -1,0 +1,57 @@
+@layer utilities {
+    .title-xl {
+        @apply font-baloo text-5xl leading-130 font-extrabold;
+    }
+    
+    .title-l {
+        @apply font-baloo text-3.5xl leading-130 font-extrabold;
+    }
+    
+    .title-m {
+        @apply font-baloo text-2xl leading-130 font-extrabold;
+    }
+    
+    .title-s {
+        @apply font-baloo text-xl leading-130 font-bold;
+    }
+    
+    .title-xs {
+        @apply font-baloo text-lg leading-130 font-bold;
+    }
+    
+    .text-l {
+        @apply font-roboto text-xl leading-130;
+    }
+    
+    .text-l.text-l-bold {
+        @apply font-bold;
+    }
+    
+    .text-m {
+        @apply font-roboto text-base leading-130;
+    }
+    
+    .text-m.text-m-bold {
+        @apply font-bold;
+    }
+    
+    .text-s {
+        @apply font-roboto text-sm leading-130;
+    }
+    
+    .text-xsm{
+        @apply font-roboto text-xs leading-130 font-bold;
+    }
+    
+    .tag {
+        @apply font-roboto text-0.5xs leading-130 font-bold;
+    }
+    
+    .button-g {
+        @apply font-roboto text-sm leading-160 font-bold;
+    }
+    
+    .button-m {
+        @apply font-roboto text-xs leading-160;
+    }    
+}
