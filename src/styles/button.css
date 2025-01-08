@@ -1,0 +1,11 @@
+.btn {
+    @apply flex items-center justify-center gap-1 rounded-md transition-all duration-150;
+}
+
+.btn.btn-primary {
+    @apply bg-yellow text-white button-g uppercase w-full py-3 hover:bg-yellow-dark;
+}
+
+.btn.btn-secondary {
+    @apply bg-base-button button-m p-2 uppercase text-base-text hover:bg-base-hover hover:text-base-subtitle; 
+}
