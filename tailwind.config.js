@@ -52,6 +52,9 @@ export default {
       },
       backgroundImage: {
         'intro-pattern': "url('/intro-bg.svg')"
+      },
+      borderRadius: {
+        '4xl': '2.25rem'
       }
     },
     plugins: [],
